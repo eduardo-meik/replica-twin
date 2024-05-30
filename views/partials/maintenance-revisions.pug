@@ -1,11 +1,11 @@
-h5 Revision History
+h5 Historial de Revisiones
 table#revisions.table.table-hover.table-sm
   thead
     tr
-      th(scope='col') Date
-      th(scope='col') Part #
-      th(scope='col') Reviewed By
-      th(scope='col') Result
+      th(scope='col') Fecha
+      th(scope='col') Parte #
+      th(scope='col') Revisado por
+      th(scope='col') Resultado
   tbody
 nav
   ul.pagination.justify-content-center
@@ -21,36 +21,36 @@ nav
     li.page-item
       a.page-link(href='#' aria-label='Next')
         span(aria-hidden='true') &raquo;
-h5 New Revision
+h5 Nueva Revisión
 form#revision-form
   .row
-    label.col-sm-2.col-form-label(for='revision-part') Part #
+    label.col-sm-2.col-form-label(for='revision-part') Parte #
     .col-sm-10
       input#revision-part.form-control-plaintext(type='text' readonly='' value='123')
   .row
-    label.col-sm-2.col-form-label(for='revision-status') Status
+    label.col-sm-2.col-form-label(for='revision-status') Estado
     .col-sm-10
       select#revision-status.form-control.form-control-sm
-        option Good
-        option Bad
+        option Óptimo
+        option Mal Estado
   .row
-    label.col-sm-2.col-form-label(for='revision-author') Author
+    label.col-sm-2.col-form-label(for='revision-author') Revisor
     .col-sm-10
       select#revision-author.form-control.form-control-sm
-        option Sherbaum Valery
-        option Erenburg Vladimir
-        option John Golley
-        option Wilbert Awdry
-        option Bill Gunston
-        option Klaus Hünecke
-        option Irwin E. Treager
+        option Julio Perez
+        option Juan Soto
+        option Pedro Garcia
+        option Patricio Ramos
+        option Marcela Cisternas
+        option Claudia Espinoza
+        option Irene Martinez
   .form-group
     label(for='revision-description') Recommended
     select#revision-description.form-control.form-control-sm
-        option Repair
-        option Replace
-        option Discard
-        option Change
+        option Reparar
+        option Reemplazar
+        option Descartar
+        option Cambiar
   button.btn.btn-primary.btn-block(type='submit') Submit
 #revision-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
   .modal-dialog

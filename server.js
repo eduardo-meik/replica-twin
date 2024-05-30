@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const helmet = require('helmet');
@@ -7,6 +8,10 @@ const { FORGE_CLIENT_ID, FORGE_CLIENT_SECRET, FORGE_MODEL_URN, MONGODB_URL } = p
 if (!FORGE_CLIENT_ID || !FORGE_CLIENT_SECRET || !FORGE_MODEL_URN || !MONGODB_URL) {
   console.warn('Provide all the following env. variables to run this application:');
   console.warn('FORGE_CLIENT_ID, FORGE_CLIENT_SECRET, FORGE_MODEL_URN, MONGODB_URL');
+  console.log(process.env.FORGE_CLIENT_ID);
+  console.log(process.env.FORGE_CLIENT_SECRET);
+  console.log(process.env.FORGE_MODEL_URN);
+  console.log(process.env.MONGODB_URL);
   return;
 }
 

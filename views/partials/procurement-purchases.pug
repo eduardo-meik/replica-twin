@@ -1,11 +1,11 @@
-h5 Purchase History
+h5 Historial de Adquisiciones
 table#purchases.table.table-hover.table-sm
   thead
     tr
-      th(scope='col') Date
-      th(scope='col') Part #
-      th(scope='col') Supplier
-      th(scope='col') Price
+      th(scope='col') Fecha
+      th(scope='col') Parte #
+      th(scope='col') Fabricante
+      th(scope='col') Precio
   tbody
 nav
   ul.pagination.justify-content-center
@@ -21,24 +21,24 @@ nav
     li.page-item
       a.page-link(href='#' aria-label='Next')
         span(aria-hidden='true') &raquo;
-h5 New Purchase
+h5 Nueva Compra
 form#purchase-form
   .row
-    label.col-sm-2.col-form-label(for='purchase-part') Part #
+    label.col-sm-2.col-form-label(for='purchase-part') Parte #
     .col-sm-10
       input#purchase-part.form-control-plaintext(type='text' readonly='' value='123')
   .row
-    label.col-sm-2.col-form-label(for='purchase-supplier') Supplier
+    label.col-sm-2.col-form-label(for='purchase-supplier') Fabricante
     .col-sm-10
       select#purchase-supplier.form-control.form-control-sm
-        option Foo Inc.
-        option Bar Ltd.
-        option Baz GmbH.
+        option Siemens Inc.
+        option ABBA Inc.
+        option ARELEC Spa.
   .row
-    label.col-sm-2.col-form-label(for='purchase-price') Price
+    label.col-sm-2.col-form-label(for='purchase-price') Precio
     .col-sm-10
       input#purchase-price.form-control-plaintext(type='text' readonly='' value='$0.00')
-  button.btn.btn-primary.btn-block(type='submit') Submit
+  button.btn.btn-primary.btn-block(type='submit') Enviar
 #purchase-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
   .modal-dialog
     .modal-content

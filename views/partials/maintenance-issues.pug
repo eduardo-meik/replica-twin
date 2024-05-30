@@ -1,11 +1,11 @@
-h5 Existing Issues
+h5 Eventos existentes
 table#issues.table.table-hover.table-sm
   thead
     tr
-      th(scope='col') Date
-      th(scope='col') Part #
-      th(scope='col') Author
-      th(scope='col') Text
+      th(scope='col') Fecha
+      th(scope='col') Parte #
+      th(scope='col') Revisor
+      th(scope='col') Texto
   tbody
 nav
   ul.pagination.justify-content-center
@@ -22,22 +22,22 @@ nav
       a.page-link(href='#' aria-label='Next')
         span(aria-hidden='true') &raquo;
 
-h5 New Issue
+h5 Nuevo evento
 form#issue-form
   .row.mb-2
-    label.col-sm-2.col-form-label(for='issue-part') Part #
+    label.col-sm-2.col-form-label(for='issue-part') Parte #
     .col-sm-10
       input#issue-part.form-control-plaintext(type='text' readonly='' value='123')
   .row.mb-2
-    label.col-sm-2.col-form-label(for='issue-title') Type
+    label.col-sm-2.col-form-label(for='issue-title') Riesgo
     .col-sm-10
       select#issue-title.form-control.form-control-sm
-        option Minor
-        option Major
-        option Urgent
-        option Critical
+        option Menor
+        option Mayor
+        option Urgente
+        option Critico
   .row.mb-2
-    label.col-sm-2.col-form-label(for='issue-author') Author
+    label.col-sm-2.col-form-label(for='issue-author') Revisor
     .col-sm-10
       select#issue-author.form-control.form-control-sm
         option Sherbaum Valery
@@ -57,7 +57,7 @@ form#issue-form
     label.col-sm-1.col-form-label(for='issue-position-z') Z
     .col-sm-3
       input#issue-position-z.form-control(type='text' value='0.0')
-  button.btn.btn-primary.btn-block(type='submit') Submit
+  button.btn.btn-primary.btn-block(type='submit') Enviar
 #issue-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
   .modal-dialog
     .modal-content

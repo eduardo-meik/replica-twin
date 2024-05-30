@@ -15,8 +15,10 @@
   "license": "MIT",
   "dependencies": {
     "autodesk-forge-tools": "^0.2.0",
+    "dotenv": "^16.3.1",
     "express": "^4.16.4",
     "helmet": "^4.1.0",
+    "mongodb": "^6.3.0",
     "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "pug": "^3.0.1",
