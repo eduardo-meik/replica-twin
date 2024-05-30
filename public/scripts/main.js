@@ -18,7 +18,7 @@ Autodesk.Viewing.Initializer(options, () => {
         { extensions: ['HeatmapExtension', 'IssuesExtension', 'AnimationExtension'] }
     );
     mainViewer.start();
-    loadModel(DEMO_URN /* set by the server-side template engine */);
+    loadModel(FORGE_MODEL_URN /* set by the server-side template engine */);
 });
 
 function loadModel(urn) {
